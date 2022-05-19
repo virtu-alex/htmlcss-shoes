@@ -4,14 +4,21 @@
     box-sizing: border-box;
 }
 
-html{
-}
-
-body {
+html {
+    scroll-behavior: smooth;
+    overflow-y: hidden;
     font-family: 'Rubik Mono One', sans-serif;
 }
 
-ul{
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+ul {
     display: flex;
     z-index: 1;
     position: absolute;
@@ -20,18 +27,17 @@ ul{
     top: 20px;
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
 }
 
-.scroll-container{
-    
-}
 
-li{
-    margin: 20px;
+li {
+    text-shadow: rgba(0, 0, 0, 0.3) 2px 3px;
     border-radius: 50%;
+    margin: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
     background-color: white;
     padding: 20px;
 }
@@ -64,6 +70,8 @@ li{
 }
 
 h1 {
+
+    text-shadow: rgba(0, 0, 0, 0.3) 8px 10px;
     font-size: 5rem;
 }
 
